@@ -1,17 +1,137 @@
-.main{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 250px 250px;
-  gap: 10px;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-.main img{
-  width: 100%;
-  height: 100%;
+body{
+  height: 800px;
+}
+.container{
+  padding: 0px 20px;
+}
+
+header{
+  margin-top: 20px;
+}
+
+header ul{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+
+header ul li a img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+header ul li a{
+  color: black;
+  font-size: 14px;
+}
+header ul li a i{
+  font-size: 20px;
 }
 
 
-.main img:nth-child(6){
-  grid-row: 1/3;
-  grid-column: 3/4;
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  gap: 20px;
+}
+
+main .main-imgage{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+main .main-imgage img{
+  width: 350px;
+  border-radius: 60px;
+}
+
+main .main-imgage i {
+  background-color: rgba(232, 232, 232, 0.674);
+  padding: 10px;
+  border-radius: 50%;
+  align-self: flex-end;
+}
+
+main .input input {
+  width: 500px;
+  padding: 10px 10px 10px 30px;
+  border-radius: 20px;
+  border: 1px solid rgb(211, 211, 211);;
+  outline: none;
+}
+main .input{
+  position: relative;
+}
+
+main .input .mic{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 14px;
+}
+
+main .input .mic i{
+  cursor: pointer;
+}
+
+main .input i.search{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+main .btn{
+  display: flex;
+  gap: 20px;
+}
+
+main .btn button{
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(223, 223, 223, 0.455);
+  cursor: pointer;
+
+}
+
+main .offer p{
+  font-size: 12px;
+}
+
+footer{
+  margin-top: 40px;
+}
+
+footer .footer-top, .footer-bottom{
+  background-color: rgba(223, 223, 223, 0.455);
+  padding: 10px 0px;
+  border-bottom: 1px solid rgba(184, 184, 184, 0.271);
+}
+
+footer .footer-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-bottom .left ul, .right ul{
+  display: flex;
+  gap: 20px;
 }
